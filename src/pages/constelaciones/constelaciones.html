@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Constelaciones</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let constelacion of constelaciones" (click)="detalleConstelaciones(constelacion)" class="animated bounceInUp">
+      <ion-avatar item-left>
+          <img src="{{constelacion.img_const}}">
+      </ion-avatar>
+      <h2>{{constelacion.nombre_const}}</h2>
+      <h3>{{constelacion.sede}}</h3>
+      <p>{{constelacion.nacimiento}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle (click)="backPage()">
+      <ion-icon class="back-button-icon icon icon-md back-button-icon-md ion-md-arrow-back" (click)="backPage()"></ion-icon>
+    </button>
+    <ion-title>Constelaciones</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-fab top right edge>
+    <button class="btn-red" ion-fab color="vibrant" mini><ion-icon class="icon-red" name="ios-arrow-dropdown"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab (click)="openSite()"><ion-icon name="md-globe" color="world"></ion-icon></button>
+      <button *ngFor="let redSocial of redesSociales" ion-fab (click)="openPage(redSocial)">
+        <ion-icon [name]="redSocial.icon_red" [color]="redSocial.color_red"></ion-icon>
+      </button>
+      <button ion-fab (click)="openYoutube()"><ion-icon name="logo-youtube" color="youtube"></ion-icon></button>
+    </ion-fab-list>
+
+  </ion-fab>
+  <!-- <ion-card>
+    <img class="imgMascota" src="{{item.img_mascota}}"/>
+  </ion-card> -->
+  <div class="container-mascota">
+    <img class="imgMascota" src="{{item.img_mascota}}"/>
+    <p class="card-title">{{ item.nombre_const }}</p>
+  </div>
+  <ion-segment [(ngModel)]="info">
+    <ion-segment-button class="segment-button segment-activated" value="biografia">
+      Bio
+    </ion-segment-button>
+    <ion-segment-button value="historia">
+      Historia
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="segment-biografia" [ngSwitch]="info">
+    <ion-list *ngSwitchCase="'biografia'">
+      <div class="container-bio">
+        <h5 class="infoConstelacion"><span>Constelación: </span>{{ item.nombre_const }}</h5>
+        <h5 class="infoConstelacion"><span>Nacimiento: </span>{{ item.nacimiento }}</h5>
+        <h5 class="infoConstelacion"><span>Sede: </span>{{ item.sede }}</h5>
+        <h5 class="infoConstelacion"><span>Color: </span>{{ item.color_const }}</h5>
+        <h5 class="infoConstelacion"><span>Mascota: </span>{{ item.mascota }}</h5>
+        <h5 class="infoConstelacion"><span>Nombre: </span>{{ item.nombre_mascota }}</h5>
+        <h5 class="infoConstelacion"><span>Lema: </span>{{ item.lema }}</h5>
+      </div>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'historia'">
+      <div class="historia" [innerHTML]="item.historia"></div>
+    </ion-list>
+  </div>
+</ion-content>

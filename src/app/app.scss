@@ -1,0 +1,123 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+app{
+
+}
+
+// Padding de las Imagenes Android
+ion-app.md [padding], ion-app.md [padding] .scroll-content {
+  padding: 5px !important;
+}
+
+// Padding de las Imagenes iOS
+ion-app.ios [padding], ion-app.ios [padding] .scroll-content{
+  padding: 5px !important;
+}
+
+// Bordes Superior e Inferior de los Items
+.list-ios > .item-block:first-child{
+  border-top: none !important;
+}
+
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+  border-bottom: none !important;
+}
+
+
+ion-navbar.toolbar{
+  height: 60px !important;
+  // background-color: #FF0007 !important;
+  text-align: left;
+  // padding-right: 2% !important
+}
+
+ion-title{
+  padding-right: 10% !important;
+  font-family: 'SonriFont-Semibold' !important;
+  font-size: 18px !important;
+  color: #FFF;
+  text-align: center;
+}
+
+.title-ios{
+  padding-right: 20% !important;
+}
+
+//Background de la imagen del Menu
+.toolbar-background-md, .toolbar-background-ios {
+    // border-color: #b2b2b2;
+    background: #FF0007;
+}
+
+button .item-inner{
+  border-bottom: none !important;
+}
+
+.headerMenu{
+  background: #FFF !important;
+}
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+  border-width: 0 0 0 0 !important;
+}
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default, .bar-button-ios {
+    color: #FFF;
+}
+
+.toolbar-title-md, .toolbar-title-ios{
+  color: #FFF !important;
+}
+
+
+.favHTitle ion-title{
+  font-family: 'SonriFont-Semilight' !important;
+}
+
+//Logo Menu
+.toolbar-content-ios{
+  .logo{
+    padding-left: 30px !important;
+  }
+}
+
+.logo{
+  padding: 30px;
+  padding-left: 65px !important;
+}
+
+.img-logo{
+  height: 225px
+}
+
+.pages button{
+  font-family: 'SonriFont-Semilight' !important;
+  height: 60px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .imageCard{
+    height: 60%;
+  }
+}
+
+// .input-wrapper{
+//   font-family: 'SonriText' !important;
+// }

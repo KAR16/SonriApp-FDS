@@ -1,0 +1,32 @@
+<!--
+  Generated template for the DetalleTutoriales page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{item.titulo}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <!-- <iframe class="videoTutorial" src="https://www.youtube.com/embed/x1hSFnjKCZ0" width="100%" frameboarder="0" allowfullscreen></iframe> -->
+  <ion-card *ngFor="let tutorial of tutoriales">
+    <p>{{tutorial.nombre_tutorial}}</p>
+
+    <div class="video-container">
+      <!-- <iframe class="videoTutorial" src="https://www.youtube.com/embed/x1hSFnjKCZ0" width="100%" frameboarder="0" allowfullscreen></iframe> -->
+      <iframe [src]="tutorial.link_tutorial" width="100%" frameboarder="0" allowfullscreen></iframe>
+    </div>
+    <!-- <a href="{{tutorial.link_tutorial}}">
+      <img src="{{tutorial.imagen_tutorial}}"/>
+      <div class="box"><p class="card-title">{{tutorial.nombre_tutorial}}</p></div>
+    </a> -->
+    <!-- <div class="box1"><p class="card-subtitle">{{item.subtitulo}}</p></div> -->
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,21 @@
+page-detalle-tutoriales {
+
+  // Imagenes
+  ion-card {
+    position: relative;
+    text-align: center;
+    border-radius: 0px !important;
+  }
+
+  // Titulo de Imagen
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 26px;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'SonriFont-Semibold' !important;
+  }
+
+}

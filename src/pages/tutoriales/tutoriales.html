@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tutoriales</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let herramienta of herramientas" (click)="detalleTutoriales(herramienta)">
+      <ion-avatar item-left>
+        <img src="{{herramienta.icono}}">
+      </ion-avatar>
+      <h2>{{herramienta.titulo}}</h2>
+      <!-- <h3>{{herramienta.subtitulo}}</h3> -->
+      <!-- <p>{{herramienta.descripcion}}</p> -->
+    </ion-item>
+  </ion-list>
+
+</ion-content>

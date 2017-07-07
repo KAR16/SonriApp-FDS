@@ -1,0 +1,48 @@
+page-nuestra-historia {
+
+  // Imagen de Nuestra Historia
+  ion-card, .card-md {
+    display: inline !important;
+    margin: 0px !important;
+  }
+
+  ion-app.md [padding], ion-app.md [padding] .scroll-content {
+    padding: 0px !important;
+  }
+
+  // Titulo de Nuestra Historia
+  .titulo{
+    padding-top: 5%;
+    padding-left: 10%;
+    text-align: justify;
+    font-size: 26px;
+    font-family: 'SonriFont-Semibold' !important;
+  }
+
+  // Texto de Nuestra Historia
+  .texto{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'SonriFont-Semilight' !important;
+  }
+
+  /* Icono Cerrar */
+  // .closeIcon{
+  //   width: 25px;
+  //   margin-left: 3%;
+  //   margin-top: 3%;
+  //   opacity: 0.5;
+  //   font-size: 2em;
+  // }
+  //
+  // .protImage {
+  //   max-height: 50%;
+  //   max-width: 60%;
+  //   margin: 18px 0;
+  // }
+
+
+
+}

@@ -1,0 +1,53 @@
+<ion-header color='youtube'>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Fábrica de Sonrisas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let item of items" (click)="open(item)">
+    <img src="{{item.imagen}}"/>
+    <div class="box"><p class="card-title">{{item.titulo}}</p></div>
+    <div class="box1"><p class="card-subtitle">{{item.subtitulo}}</p></div>
+  </ion-card>
+
+  <!-- <ion-card (click)="open('QS')">
+    <img src="assets/img/card-saopaolo.png"/>
+    <div class="card-title">¿Quiénes</div>
+    <div class="card-subtitle">Somos?</div>
+  </ion-card>
+
+  <ion-card (click)="open('NM')">
+    <img src="assets/img/card-amsterdam.png"/>
+    <div class="card-title">Nuestra</div>
+    <div class="card-subtitle">Misión</div>
+  </ion-card>
+
+  <ion-card (click)="open('NH')">
+    <img src="assets/img/card-sf.png"/>
+    <div class="card-title">Nuestra</div>
+    <div class="card-subtitle">Historia</div>
+  </ion-card>
+
+  <ion-card (click)="open('V')">
+    <img src="assets/img/card-amsterdam.png"/>
+    <div class="card-title">Se Un</div>
+    <div class="card-subtitle">Voluntario</div>
+  </ion-card>
+
+  <ion-card (click)="open('SV')">
+    <img src="assets/img/card-madison.png"/>
+    <div class="card-title">Solicitanos</div>
+    <div class="card-subtitle">Una Visita</div>
+  </ion-card>
+
+  <ion-card (click)="open('D')">
+    <img src="assets/img/card-sf.png"/>
+    <div class="card-title">Has</div>
+    <div class="card-subtitle">Un Donativo</div>
+  </ion-card> -->
+</ion-content>

@@ -1,0 +1,43 @@
+page-donativo {
+
+    // Imagen de Quienes Somos
+    ion-card, .card-md {
+      display: inline !important;
+      margin: 0px !important;
+    }
+
+    ion-app.md [padding], ion-app.md [padding] .scroll-content {
+      padding: 0px !important;
+  }
+
+  // Titulo de Quienes Somos
+  .titulo{
+    padding-top: 5%;
+    padding-left: 10%;
+    text-align: justify;
+    font-size: 26px;
+    font-family: 'SonriFont-Semibold' !important;
+  }
+
+  // Texto de Quienes Somos
+  .texto{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'SonriFont-Semilight' !important;
+  }
+
+  //Titulos - Opciones
+  .texto span{
+    font-family: 'SonriFont-Semibold' !important;
+    font-size: 20px;
+  }
+
+  .texto-op{
+    line-height: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+}
